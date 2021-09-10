@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Week 5</title>
+        <script src="https://unpkg.com/vue@3.0.2"></script>
+    </head>
+    <body>
+        <div id="app">
+
+            <h1>{{message}}</h1>
+
+            <ol>
+                <todo-item 
+                v-for="todo in todos" 
+                :item="todo.item"
+                :name="todo.name"
+                
+                ></todo-item>
+            </ol>
+
+            <number-counter></number-counter>
+            <div :style="{fontSize: postFontSize + 'em'}">
+                <titles v-for="item in headings"
+                :title="item.title"
+                v-on:enlarge-text = "postFontSize += 0.1"
+                v-on:decrease-text = "postFontSize -= 0.1"
+            ></titles></div>
+            
+            
+
+            
+
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
