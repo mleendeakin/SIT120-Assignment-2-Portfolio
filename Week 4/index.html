@@ -1,0 +1,41 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning Vue</title>
+    
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+  </head>
+<body>
+    <h1>Hello</h1>
+    <div id="app">
+
+    <h1>{{heyThere}}</h1>
+
+
+    
+    <span v-bind:title="title">Hover over me!</span>
+
+    <h2 v-if="seen">{{message}}</h2>
+    <h2 v-else>{{altMessage}}</h2>
+    <h2 v-show="showMe"></h2>
+
+    <button @click="changeSeen"> Click me to change the message above</button>
+    <li v-for="todo in todos">
+        {{todo.text}}
+    </li>  
+
+    <h1 @click="printNewMessage">{{clickMessage}}</h1>
+    <h2>Click the button to change the number!: {{clickNumber}}</h2>
+
+    <button @click="numberChanger">Click me please!</button>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
