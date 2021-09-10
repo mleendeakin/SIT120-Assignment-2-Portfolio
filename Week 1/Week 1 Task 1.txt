@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test Page</title>
+</head>
+
+<body>
+<h1>Example HTML page</h1>
+<p>This is a paragraph</p>
+
+<table>
+<tr>
+    <th>Unit Code</th>
+    <th>Unit Name</th>
+    <th>Date Commenced</th>
+  </tr>
+  <tr>
+    <td>SIT120</td>
+    <td>Web Dev</td>
+    <td>18/06/2021</td>
+  </tr>
+  <tr>
+    <td>SIT314</td>
+    <td>IOT</td>
+    <td>18/06/2021</td>
+  </tr>
+  <tr>
+    <td>SIT317</td>
+    <td>Innovation</td>
+    <td>18/06/2021</td>
+  </tr>
+</table>
+<ul>
+<h2>Things to do!</h2>
+  <li>Keep up with homework</li>
+  <li>Feed Pets</li>
+  <li>Do the washing!</li>
+</ul>
+
+<form>
+<input type="text" value="Hello!">
+<input type="button" value="Button">
+</form>
+</body>
+</html>
